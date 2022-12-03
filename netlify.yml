@@ -1,2 +1,0 @@
-[context.production.environment]
-HUGO_VERSION = "v0.107.0"
