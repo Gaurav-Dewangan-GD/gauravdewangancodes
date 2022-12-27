@@ -1,6 +1,6 @@
 
 baseURL: "http://gauravdewangan.codes/"
-title: gd:codes
+title: GD:Codes
 paginate: 5
 theme: PaperMod
 
@@ -25,7 +25,8 @@ params:
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark # dark, light
-  disableThemeToggle: false
+  disableThemeToggle: true
+
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -67,12 +68,12 @@ params:
     imageHeight: 250
     imageTitle: website logo
     buttons:
-      - name: Blog
-        url: posts
-      # - name: Tags
-      #   url: tags
-      - name: Projects
-        url: projects
+      # - name: Blog
+      #   url: posts
+      # # - name: Tags
+      # #   url: tags
+      # - name: Projects
+      #   url: projects
 
   # home-info mode
   homeInfoParams:
@@ -119,18 +120,28 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
+    # - identifier: categories
+    #   name: categories
+    #   url: /categories/
+    #   weight: 10
+    - identifier: Home
+      name : Home
+      url : index.html
+      weight: 1
     - identifier: tags
       name: tags
       url: /tags/
-      weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+      weight: 2
+    - identifier: Blogs
+      name: Blogs
+      url: posts
+    - identifier: Videos
+      name: Videos
+      url: videos
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
